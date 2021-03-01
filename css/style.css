@@ -35,7 +35,7 @@ body {
 
 @font-face {
   font-family: "JetMono";
-  src: url("../css/font/JetBrainsMono-Regular.woff") format("woff");
+  src: url("../../css/font/JetBrainsMono-Regular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
@@ -468,6 +468,7 @@ header {
   color: #1998fa;
   color: blueviolet;
   color: red;
+  color: green;
   line-height: 20px; }
   @media only screen and (min-width: 62.5em) {
     .test-info {
