@@ -34,32 +34,32 @@ body {
   font-weight: 300; }
 
 @font-face {
-  font-family: 'JetMono';
+  font-family: "JetMono";
   src: url("../../css/font/JetBrainsMono-Regular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
-  font-family: 'Custom';
+  font-family: "Custom";
   src: url("../../css/font/custom-light.woff") format("woff");
   font-weight: 300; }
 
 @font-face {
-  font-family: 'Custom';
+  font-family: "Custom";
   src: url("../../css/font/custom-regular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
-  font-family: 'Custom';
+  font-family: "Custom";
   src: url("../../css/font/custom-book.woff") format("woff");
   font-weight: 500; }
 
 @font-face {
-  font-family: 'Custom';
+  font-family: "Custom";
   src: url("../../css/font/custom-medium.woff") format("woff");
   font-weight: 600; }
 
 @font-face {
-  font-family: 'Custom';
+  font-family: "Custom";
   src: url("../../css/font/custom-bold.woff") format("woff");
   font-weight: 700; }
 
