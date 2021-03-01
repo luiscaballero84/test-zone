@@ -466,6 +466,7 @@ header {
   font-family: "JetMono";
   margin-bottom: 2rem;
   color: #1998fa;
+  color: blueviolet;
   line-height: 20px; }
   @media only screen and (min-width: 62.5em) {
     .test-info {

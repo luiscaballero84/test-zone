@@ -29,6 +29,7 @@ header {
   font-family: "JetMono";
   margin-bottom: 2rem;
   color: #1998fa;
+  color: blueviolet;
   line-height: 20px;
   @include respond(desktop) {
     display: none;
