@@ -1,0 +1,30 @@
+.listing {
+  margin-top: 7rem;
+}
+
+.listing-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: $color-black;
+  border-top: 2px solid $color-grey;
+  
+  &:link {
+    box-shadow:none;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  
+  & h4, p { transition: transform .2s ease; }
+
+  // move icon on hover
+  @media (hover: hover){
+    &:hover h4, &:hover p { transform: translate(1rem, 0) }
+  }
+  &:last-of-type { border-bottom: 2px solid $color-grey; }
+}
+
+.listing-item__icon { vertical-align: -.5rem; }

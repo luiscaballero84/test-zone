@@ -1,0 +1,281 @@
+///////////////////
+// Navbar
+.navbar {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  // width: 100%;
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: "Mod", sans-serif;
+
+  @include respond(desktop) {
+    padding-top: 8rem;
+    max-width: 1280px;
+  }
+  @media (hover: hover) {
+    &:hover {
+      &:before {
+        top: 0rem;
+      }
+    }
+  }
+}
+
+.navbar__container--left {
+  display: flex;
+  margin-right: auto;
+}
+
+.navbar__container--right {
+  @include respond(desktop) {
+    position: absolute;
+    top: 3rem;
+    right: 2.5rem;
+  }
+}
+
+// .navbar .icon {
+//   // margin-left: 2.5rem;
+// }
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  // justify-content: flex-end;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  @include respond(desktop) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35rem;
+    background-color: #f1f1f1;
+  }
+}
+
+.searchbar__text {
+  display: none;
+  @include respond(desktop) {
+    display: block;
+    margin-right: auto;
+    font-size: 1.3rem;
+    font-size: 1.4rem;
+    //font-weight: 300;
+    color: #888;
+  }
+}
+
+.navbar__menu {
+  display: none;
+  @include respond(desktop) {
+    // position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    font-size: 1.4rem;
+    // font-weight: 300;
+    // font-weight: 600;
+
+    // justify-content: flex-end;
+    // height: 100%;
+    // width: 50%;
+    // padding-bottom: 0;
+    // background-color: transparent;
+    // box-shadow: none;
+  }
+}
+
+.navbar__menu li {
+  margin-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.navbar__burger {
+  z-index: 1030;
+  display: block;
+  cursor: pointer;
+  margin-top: 1rem;
+  @include respond(desktop) {
+    display: none;
+  }
+}
+
+//the 3 lines of the burger icon
+.navbar__burger div {
+  height: 0.1rem;
+  width: 3rem;
+  margin-top: 0.7rem;
+  background-color: $color-primary-contrast;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar__burger div:last-of-type {
+  margin-bottom: 0.7rem;
+}
+
+///////////////////
+// Logo
+.logo {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 2px solid $color-primary;
+  color: $color-primary-contrast;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+///////////////////
+// Menu (When burger Icon is clicked)
+.navbar-menu {
+  z-index: 1000;
+  position: fixed;
+  top: 0rem;
+  right: -100rem; // goes with class nav-active right: -3rem;
+
+  height: 100vh;
+  width: 92vw;
+  padding-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-primary;
+  box-shadow: -5px 0px 15px 2px rgba(0, 0, 0, 0.1);
+  transition: right 0.35s ease-out;
+
+  @include respond(tablet) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+    padding-bottom: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.menu-active {
+  right: 0rem;
+}
+
+//  margins of Menu links
+.navbar-menu li {
+  margin-bottom: 2.5rem;
+  user-select: none;
+  &:last-of-type {
+    margin-top: 4rem;
+  }
+
+  @include respond(tablet) {
+    margin-bottom: 0rem;
+    margin-right: 3.5rem;
+    &:last-of-type {
+      margin-top: 0rem;
+      margin-right: 0rem;
+    }
+  }
+}
+
+// REGULAR NAVBAR LINK
+.navbar-menu .link {
+  font-size: 2.8rem;
+  color: $color-black;
+  text-decoration: none;
+  box-shadow: none;
+
+  @include respond(tablet) {
+    display: block;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.1s ease;
+    &:hover {
+      border-bottom: 2px solid $color-primary-contrast;
+    }
+  }
+}
+
+// CTA Menu LINK
+.cta-link {
+  padding-top: 1rem;
+  padding-right: 2.5rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  color: $color-primary-contrast;
+  font-size: 2.5rem;
+  border: 2px solid $color-primary-contrast;
+  border-radius: 50rem;
+  text-decoration: none;
+  box-shadow: none;
+
+  @include respond(tablet) {
+    margin-top: -10rem !important;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      color: $color-primary-contrast;
+      background-color: $color-primary;
+      border: 2px solid $color-primary;
+    }
+  }
+}
+
+// Three burger lines while animating
+// .burger-animate .line1 {
+//   background-color: $color-primary-contrast;
+//   transform: rotate(-45deg) translate(-0.7rem, 0.6rem);
+// }
+// .burger-animate .line2 {
+//   opacity: 0;
+// }
+
+// .burger-animate .line3 {
+//   background-color: $color-primary-contrast;
+//   transform: rotate(45deg) translate(-0.6rem, -0.6rem);
+// }
+
+//// Scroll down change Navbar
+.nav-scroll {
+  background-color: transparent;
+  &:before {
+    top: 0rem;
+  }
+}
+
+///// Links is-active when scroll down
+.navbar-menu .link-active {
+  border-bottom: 2px solid $color-primary;
+}
+
+.navbar-menu li:last-of-type .link-active {
+  background-color: $color-primary;
+  color: $color-primary-contrast;
+  border: 2px solid $color-primary;
+}

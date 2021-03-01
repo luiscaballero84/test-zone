@@ -1,0 +1,30 @@
+//////////////
+// observer API trigger animations classes
+//////////////
+
+// regular image animation
+.js-animate-img {
+  margin-top: 7rem;
+  transition: margin-top 0.8s; 
+}
+
+.isAnimated { margin-top: 0rem; }
+
+///// bio / profile image animation
+.js-animate-bio__img {
+  margin-top: 10rem;
+  transition: margin-top .8s; 
+}
+
+.isAnimated-bio__img { 
+  margin-top: 5rem; 
+  @include respond(tablet) { margin-top: 2rem }  
+}
+
+///// projects / first card thumb image animation
+.js-first-img {
+  margin-top: 12rem;
+  transition: margin-top .8s; 
+}
+
+.isAnimated-firstThumb { margin-top: 0rem; }

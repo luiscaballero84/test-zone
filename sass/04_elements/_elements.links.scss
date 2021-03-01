@@ -1,0 +1,47 @@
+// --------------------------------------------------
+// #Links basic styling
+// --------------------------------------------------
+
+// Reset Links
+a:link {
+  color: $color-black;
+  text-decoration: none;
+}
+
+a:visited { 
+  color: $color-black;
+}
+
+// #Links inside Body Text <p>
+p a:link {
+  //display: inline-block; --> solve the break line problems in firefox but doesn look good :) 
+  padding-bottom: .2rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  color: $color-grey-dark;
+  text-decoration: none;
+  box-shadow: rgba($color-primary, 1) 0px -2px 0px inset;
+  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s, color 0.15s ease 0s;
+}
+
+p a:visited { 
+  color: $color-grey-dark;
+  border-bottom-color: $color-primary;
+}
+@media (hover: hover) {
+  p a:hover {
+    box-shadow: rgba($color-primary, 1) 0px -40px inset;
+    cursor: pointer;
+  }
+}
+
+p a:active {color: $color-grey-dark;}
+
+.ghost-link {
+  color: $color-white;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    text-decoration: underline;
+  }
+}

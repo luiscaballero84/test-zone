@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- OG Metadata -->
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="Luis Caballero: ChillQuotes Case Study" />
+  <meta property="og:description" content="Front-end developer and designer specialized in JavaScript and React" />
+  <meta property="og:image" content="https://www.luiscaballero.dev/img/projects/quotes-thumb.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.luiscaballero.dev/case-quotes.html" />
+  <title>Luis Caballero - ChillQuotes Case Study </title>
+  <!-- Favicon -->
+  <link rel='icon' href='../img/favicon32x32-animation.gif' type='image/gif'/ >
+  <!-- Google Fonts / Roboto r-m-b / Roboto Mono r-m-b -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Font icons / Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- JavaScript Scripts -->
+  <script type="module" src="../js/appCasePage.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+  <nav class="case__navbar grid">
+    <div class="grid-item nav-flex">
+      <a href="../index.html" class="logo"> Luis Caballero </a>
+    </div>
+  </nav>
+  <!-- ARROW-UP -->
+  <a href="#"><span class="material-icons arrow-up">north</span></a>
+  <!-- HEADER -->
+  <header class="case__header grid">
+    <div class="grid-item">
+      <h3 class="case__header-title case__animate">ChillQuotes</h3>
+      <div class="col-2-container case__animate">
+        <!-- 1 COL -->
+        <div>
+          <p>ChillQuotes is a ReactJS web application that consumes data from the
+            <a href="https://pprathameshmore.github.io/QuoteGarden/">Quote Garden REST API</a>
+            and deliver a random quote based on a selected topic or author. 
+          </p>
+        </div>
+        <div>
+          <div class="case__info-container case__info-item">
+            <h5 class="case__info_title">Stack</h5>
+            <h6>React, JavaScript, SASS, PropTypes, Jest</h6>
+          </div>
+          <div class="case__info-container">
+            <a class="case__info-item" href="https://github.com/caballero-react-ex/chillquotes">
+              <h5 class="case__info_title">Code</h5>
+              <h6>View Repository</h6>
+              <span class="case__icon material-icons"> launch </span>
+            </a>
+          </div>
+          <!-- 2 COL -->
+          <div class="case__info-container">
+            <a class="case__info-item" href="https://caballero-react-ex.github.io/chillquotes/">
+              <h5 class="case__info_title">Live Demo</h5>
+              <h6>View Site</h6>
+              <span class="case__icon material-icons"> launch </span>
+            </a>
+          </div>
+        </div> <!-- end 2nd column -->
+      </div> <!-- end col-2 grid-->
+    </div>
+    <img 
+      class="grid-item-full case__img-full case__animate-img u-width-100 u-mt-8 u-img-shadow" 
+      src="../img/projects/quotes-pic-01.png" 
+      alt="project quotes picture landing page"
+    >
+  </header>
+  <!-- MAIN -->
+  <main class="grid case__section-bottom">
+  <!-- Motivation section-->
+  <section class="grid-item">
+    <h4 class="case__section-title-alt"> Motivation & Goals</h4>
+    <div class="col-2-container-plus">
+      <div>
+        <p>
+          I built up this project because I love wise quotes and wanted to share some wisdom on how 
+          to stay relaxed and motivated in these difficult times. 
+        </p><br>
+        <p>
+          In order to practice my agile skills, I organized the whole project in a single sprint of two 
+          weeks. The sprint included the UX/UI design and the whole implementation of the app. 
+        </p><br>
+        <p>
+          I created a Trello board with the assets, tasks, user journey, features and deadlines.
+        </p><br>
+      </div>
+    </div>
+  </section>
+  <!-- #Tech Used-->
+  <section class="grid-item case__section">
+    <div class="col-2-container">
+      <img 
+        class="case__img-alt u-width-100 js-animate-img lazy-img" 
+        src="../img/lazy-img.jpg"
+        data-src="../img/projects/quotes-pic-test.png" 
+        alt="project quotes picture testing"
+      >
+      <div>
+        <h4 class="case__section-title">Tech Used</h4>
+        <p>
+          React hooks were use throughout the project for fetching the data and manage the states without the need 
+          for Redux.
+        </p><br>
+        <p>
+          To organize all the custom CSS I used SASS and the ITCSS architecture fundamentals. 
+          It helped me to organize the CSS files and deal with the CSS specifics. 
+        </p><br>
+        <p>
+          Last but not least, I used PropTypes for the component props and I am building several integration tests with Jest and react-testing-library. 
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- #Problems & Process -->
+  <section class="grid-item case__section">
+    <div class="col-2-container">
+      <img 
+        class="case__img u-width-100 u-img-shadow js-animate-img lazy-img"
+        src="../img/lazy-img.jpg"
+        data-src="../img/projects/quotes-pic-03.png" 
+        alt="project quotes picture post twitter"
+      >
+      <div>
+        <h4 class="case__section-title">Problems & Thought Process</h4>
+        <p>
+          One of the biggest problem was actually finding the right REST API.
+          There aren’t so much quote APIs out there that are free and with no need of an  API_KEY. 
+          Lucky me, I found the Quote Garden REST API. 
+        </p>
+        <br>
+        <p>
+          Other problems that came in my way were the built of a fetch reducer hook, how to deliver 
+          the data to the user and post it in Twitter and how to make the app accessible. 
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- #Full Width Image -->
+  <section class="grid-item-full case__section">
+    <img 
+      class="case__img-full u-width-100 u-img-shadow js-animate-img lazy-img" 
+      src="../img/lazy-img.jpg"
+      data-src="../img/projects/quotes-pic-02.png" 
+      alt="project quotes picture post twitter"
+    >
+  </section>
+  <!-- #Lessons Learned -->
+  <section class="grid-item">
+    <div class="col-2-container-plus">
+      <div>
+        <h4 class="case__section-title-alt">Lessons Learned</h4>
+        <p>
+          This project helped me to solidify my React and JavaScript ES6 knowledge, 
+          specially the use of hooks and how to manage the different states. 
+        </p>
+        <br>
+        <p>
+          I got great practice on how to fetch data from an API, my first hands on testing 
+          and a much better understanding of accessibility.
+        </p>
+        <br>
+        <p>
+          Before this project, my knowledge and commitment to accessibility was suboptimal. 
+          Now I have a much better grasp about accessibility issues.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- #Next Project Link -->
+  <div class="grid-item case__section">
+    <a class="card" href="/pages/case-grids.html">
+      <h6 class="card__link">View Next Project 
+        <span class="card__icon material-icons"> navigate_next </span>
+      </h6>
+    </a>
+  </div>
+  <!-- End of MAIN -->
+  </main>
+ <!-- Footer -->
+  <footer class="footer grid">
+    <div class="grid-item">
+      <a class="anchor" id="contact-section"></a>
+      <h5 class="section-title">let’s code together!</h5>
+      <a class="footer__mail" href="mailto:hallo.luiscaballero@gmail.com">hallo.luiscaballero@gmail.com</a>
+      <ul class="footer__social">
+        <li><h6><a href="https://github.com/luiscaballero84" target="_blank" rel="noopener noreferrer">Github</a></h6></li>
+        <li><h6><a href="https://www.linkedin.com/in/luis-caballero-front-end-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h6></li>
+        <li><h6><a href="https://www.behance.net/luis-caballero" target="_blank" rel="noopener noreferrer">Behance</a></h6></li>
+        <li><h6><a href="https://www.instagram.com/workbyhorses/" target="_blank" rel="noopener noreferrer">Instagram</a></h6></li>
+        <li><p class="footer__copyright">Designed and coded with ❤️ by Luis Caballero © 2020</p></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

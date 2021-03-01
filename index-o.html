@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- OG Metadata -->
+  <!-- <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="Luis Caballero: Front-end Developer" />
+  <meta property="og:description" content="Front-end developer and designer specialized in JavaScript and React" />
+  <meta property="og:image" content="https://www.luiscaballero.dev/img/profile-pic-600x600.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.luiscaballero.dev/" /> -->
+  <title>Testing Page</title>
+  <!-- Favicon -->
+  <link rel='icon' href='img/favicon32x32-animation.gif' type='image/gif'/ >
+  <!-- Google Fonts / Open Sans r-m / -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Font icons / Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- JavaScript Scripts -->
+  <script type="module" src="js/app.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <nav class="navbar grid">
+    <div class="grid-item nav-flex">
+      <a href="#" class="logo"> Luis Caballero </a>
+      <ul class="navbar-menu">
+        <li><h6><a href="#" class="anchor" id="home-btn">Home</a></h6></li>
+        <li><h6><a href="#bio-section" class="link" id="bio-btn">Bio</a></h6></li>
+        <li><h6><a href="#stack-section" class="link" id="project-btn">Stack</a></h6></li>
+        <li><h6><a href="#projects-section" class="link" id="project-btn">Projects</a></h6></li>
+        <li><h6><a href="#about-section" class="link" id="about-btn">About</a></h6></li>
+        <li><h6><a href="#contact-section" class="cta-link" id="contact-btn">Contact</a></h6></li>
+      </ul>
+      <div class="navbar-burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </nav>
+  <!-- ARROW-UP -->
+  <a href="#"><span class="material-icons arrow-up">north</span></a>
+  <!-- Header START -->
+  <header class="header grid">
+    <div class="grid-item header-item">
+      <h1 class="header__title u-mb-2">
+        Hi! I’m Luis, a front-end developer and designer
+      </h1>
+      <h2 class="header__subtitle">
+        I develop logical solutions to modular problems using programming languages and visual communication.
+      </h2>
+      <a class="header__arrow" href="#bio-section"><span class="material-icons">south</span></a>
+    </div>
+  </header>
+  
+  <main>
+  <!-- BIO start -->
+  <section class="bio grid section-bottom">
+    <div class="grid-item">
+      <a class="anchor" id="bio-section"></a>
+      <h5 class="section-title ">bio</h5>
+      <div class="col-2-container-plus">
+        <!-- Col 1 -->
+        <div>
+          <h3 class="bio__title">Who is Luis? </h3>
+          <p  class="bio__text">
+            I am a Berlin-based front-end developer and designer. 
+            After 7 years working as a graphic designer I started learning how to code and changed 
+            my career path. Now I am focused on front-end development in JavaScript and ReactJS.
+          </p>
+          <p class="bio__text u-highlight-text">
+            I have a simple and bold approach to coding and design, always looking for the simplest 
+            solution to a problem.
+          </p>
+          <p class="bio__text">
+            Aside from my new love for coding, my passions are typography, 
+            <a href="https://www.instagram.com/workbyhorses/" target="_blank" rel="noopener noreferrer">
+              illustration</a>, neatly organized layouts, practical philosophy, history, 
+            <a href="https://open.spotify.com/playlist/2PtT9R0JVut2iTtEVvksHD?si=eqmS-6SZRlqDO2bVLMUeww" target="_blank" rel="noopener noreferrer">
+              tropical music</a>, and home-made food.
+          </p>
+          <p class="bio__text">
+            When I am not coding or learning something new, I like doing illustration projects 
+            and spending time with family and friends. 
+          </p>
+          <p class="bio__text">
+            If you are looking for a nice front-end developer, team-player and eager to learn, <a href="mailto:hallo.luiscaballero@gmail.com">get in touch!</a>
+          </p>
+        </div>
+        <!-- Col 2  -->
+        <div>
+          <img 
+            class="bio__img js-animate-bio__img lazy-img" 
+            src="img/lazy-img-square.jpg" 
+            data-src="img/profile-pic-600x600.jpg"  
+            alt="profile-pic"
+          >
+        </div>
+      </div> <!-- 2-col GRID End -->
+      <!-- Listing Comp. Starts Here-->
+      <div class="listing">
+        <a 
+          class="listing-item link" 
+          href="pdf/LuisCaballero_FrontEnd-Dev_CV.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <h4>Download CV</h4>
+          <p class="listing-item__text">
+            <span class="listing-item__icon material-icons"> launch </span>
+          </p>
+        </a>
+        <a 
+          class="listing-item" 
+          href="https://www.behance.net/luis-caballero" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <h4>Design Portfolio</h4>
+          <p class="listing-item__text">
+            <span class="listing-item__icon material-icons"> launch </span>
+          </p>
+        </a>
+      </div>
+      
+    </div> <!-- end BIO grid-item-->
+  </section> <!-- BIO end-->
+
+  <!-- STACK start -->
+  <section class="stack grid section-bottom">
+    <div class="grid-item">
+      <a class="anchor" id="stack-section"></a>
+      <h5 class="section-title">technical stack</h5>
+      <div class="tag-container">
+        <h6 class="tag">HTML</6>
+        <h6 class="tag">CSS</6>
+        <h6 class="tag">SASS</6>
+        <h6 class="tag">Bootstrap</6>
+        <h6 class="tag">BEM</6>
+        <h6 class="tag">ITCSS</6>
+        <h6 class="tag">React</6>
+        <h6 class="tag">JavaScript</6>
+        <h6 class="tag">Jest</6>
+        <h6 class="tag">testing-library</6>
+        <h6 class="tag">npm</6>
+        <h6 class="tag">Git/GitHub</6>
+        <h6 class="tag">UX/UI</6>
+        <h6 class="tag">Figma</6>
+        <h6 class="tag">Illustrator</6>
+        <h6 class="tag">Photoshop</6>
+        <h6 class="tag">InDesign</6>
+        <h6 class="tag">Agile</6>
+        <h6 class="tag">Scrum</6>
+        <h6 class="tag">Kanban</6>
+        <h6 class="tag">Trello</6>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects START -->
+  <section class="projects grid section-bottom">
+    <div class="grid-item">
+      <a class="anchor" id="projects-section"></a>
+      <h5 class="section-title project-title-grid-item">Selected Projects</h5>
+      <div class="col-2-container js-project">
+        <!-- JS card inserted here --> 
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Starts 3 Reasons section -->
+  <section class="about__reasons grid section-bottom">
+    <div class="grid-item">
+      <a class="anchor" id="about-section"></a>
+      <h5 class="section-title u-text-center">about</h5>
+      <h3 class="about__reasons-titel">Three reasons to hire me</h3>
+      <div class="col-3-container">
+        <div class="about__reasons-container">
+          <span class="about__reasons-line"></span>
+          <h4 class="about__reasons-subtitel">Problem Solver</h4>
+          <p>
+            The main goal of a graphic designer is to solve visual problems through form, 
+            type, color and space. I use the same approach into web development: 
+            I try to find creative solutions in the simplest possible way.
+          </p>
+        </div>
+        <div class="about__reasons-container">
+          <span class="about__reasons-line"></span>
+          <h4 class="about__reasons-subtitel">Rapid Learner</h4>
+          <p>
+            I am a very curious person and an avid learner. As trends and technology continuously change,
+            it is very important to keep learning constantly. My willingness to learn helps me being 
+            a better developer each day. 
+          </p>
+        </div>
+        <div class="about__reasons-container">
+          <span class="about__reasons-line"></span>
+          <h4 class="about__reasons-subtitel">Communication Skills</h4>
+          <p>
+            As a fellow graphic designer myself, I speak the language of designers and project managers. 
+            Due to experience I already hold the skill of effective communication and can apply it into future projects. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> <!-- reasons ends here -->
+
+
+  <!-- Values section starts here -->
+  <section class="values grid section-bottom">
+    <div class="grid-item">
+      <!-- <img src="img/smiley-icon_yellow.svg" alt="smiley icon" class="values-icon"> -->
+      <img class="values-icon" src="img/smiley-animation50x50.gif" alt="smiley icon animation" >
+      <h3 class="values-titel">These are my values</h3>
+      <p class="values-text">01/ I like to follow <a href="https://en.wikipedia.org/wiki/Arthur_Ashe" target="_blank" rel="noopener noreferrer">Arthur Ashe’s</a> advice: “Start where you are, use what you have, do what you can”.</p>
+      <p class="values-text">02/ Think first, make a plan and act accordingly. If the plan is not working, plan again.</p>
+      <p class="values-text">03/ I am a minimalist at heart. I seek for ways to do more with less.</p>
+      <p class="values-text">04/ Social skills are as important as technical skills.</p>
+      <p class="values-text">05/ Stay positive. Don’t get angry. Work hard. Be nice to people. </p>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer START -->
+  <footer class="footer grid">
+    <div class="grid-item">
+      <a class="anchor" id="contact-section"></a>
+      <h5 class="section-title">let’s code together!</h5>
+      <a class="footer__mail" href="mailto:hallo.luiscaballero@gmail.com">hallo.luiscaballero@gmail.com</a>
+      <ul class="footer__social">
+        <li><h6><a href="https://github.com/luiscaballero84" target="_blank" rel="noopener noreferrer">Github</a></h6></li>
+        <li><h6><a href="https://www.linkedin.com/in/luis-caballero-front-end-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h6></li>
+        <li><h6><a href="https://www.behance.net/luis-caballero" target="_blank" rel="noopener noreferrer">Behance</a></h6></li>
+        <li><h6><a href="https://www.instagram.com/workbyhorses/" target="_blank" rel="noopener noreferrer">Instagram</a></h6></li>
+        <li><p class="footer__copyright">Designed and coded with ❤️ by Luis Caballero © 2020</p></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>  
+</body>
+</html>

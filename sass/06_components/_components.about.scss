@@ -1,0 +1,27 @@
+// ABOUT Section
+///////////////////
+.about__reasons { 
+  background-color: $color-grey-light; 
+}
+
+.about__reasons p { color: $color-grey-dark; }
+
+.about__reasons-titel { text-align: center; }
+
+.about__reasons-container {
+  margin-top: 5rem;
+  @include respond(tablet) { margin-top: 6rem;}
+}
+
+.about__reasons-subtitel {
+  margin-bottom: 1rem;
+  @include respond(tablet) { margin-bottom: 1.5rem;}
+}
+
+.about__reasons-line {
+  display: inline-block;
+  height: .5rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+  background-color: $color-primary;
+}

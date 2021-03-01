@@ -1,0 +1,14 @@
+.link-icon { 
+  display: inline;
+  padding-right: .7rem; 
+}
+
+.link-icon__container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-icon__container * {
+  color: $color-black;
+  margin-bottom: .3rem;
+}

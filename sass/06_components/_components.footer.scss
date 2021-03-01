@@ -1,0 +1,43 @@
+.footer { background-color: $color-grey; }
+
+.footer a {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .1s ease;
+}
+
+.footer a:hover {
+  @include respond(tablet) { border-bottom: 2px solid $color-black; }
+}
+
+.footer__mail {
+  margin-top: 4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+}
+
+.footer__social {
+  margin-top: 7.5rem;
+  @include respond(tablet) { 
+    display: flex;
+    align-items: baseline;
+    margin-top: 10rem;
+  }
+}
+
+.footer__social h6 {
+  margin-top: .5rem;
+  margin-right: 1.5rem;
+}
+
+.footer__social li:last-of-type { margin-left: auto; }
+
+.footer__copyright {
+  margin-top: 8rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $color-grey-dark;
+  @include respond(small-tablet) { font-size: 1.4rem; }
+  @include respond(tablet) { margin-top: 0; }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- OG Metadata -->
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="Luis Caballero: Grids Case Study" />
+  <meta property="og:description" content="Front-end developer and designer specialized in JavaScript and React" />
+  <meta property="og:image" content="https://www.luiscaballero.dev/img/projects/grids-thumb.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.luiscaballero.dev/case-grids.html" />
+  <title>Luis Caballero - Grids Case Study </title>
+  <!-- Favicon -->
+  <link rel='icon' href='../img/favicon32x32-animation.gif' type='image/gif'/ >
+  <!-- Google Fonts / Roboto r-m-b / Roboto Mono r-m-b -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Font icons / Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- JavaScript Scripts -->
+  <script type="module" src="../js/appCasePage.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+  <nav class="case__navbar grid">
+    <div class="grid-item nav-flex">
+      <a href="../index.html" class="logo"> Luis Caballero </a>
+    </div>
+  </nav>
+  <!-- ARROW-UP -->
+  <a href="#"><span class="material-icons arrow-up">north</span></a>
+  <!-- HEADER -->
+  <header class="case__header grid">
+    <div class="grid-item">
+      <h3 class="case__header-title case__animate">Grid Systems</h3>
+      <div class="col-2-container case__animate">
+        <!-- 1 COL -->
+        <div>
+          <p>
+            Grid Systems is a small grid-based layout system experiment with CSS Grid. It is a fully responsive website 
+            that displays the cover of the timeless classic book of Swiss designer Josef Müller-Brockmann.
+          </p>
+        </div>
+        <div>
+          <div class="case__info-container case__info-item">
+            <h5 class="case__info_title">Stack</h5>
+            <h6>HTML, SASS</h6>
+          </div>
+          <div class="case__info-container">
+            <a class="case__info-item"href="https://github.com/losgridos/01-gridsystems">
+              <h5 class="case__info_title">Code</h5>
+              <h6>View Repository</h6>
+              <span class="case__icon material-icons"> launch </span>
+            </a>
+          </div>
+          <!-- 2 COL -->
+          <div class="case__info-container">
+            <a class="case__info-item"href="https://losgridos.github.io/01-gridsystems/">
+              <h5 class="case__info_title">Live Demo</h5>
+              <h6>View Site</h6>
+              <span class="case__icon material-icons"> launch </span>
+            </a>
+          </div>
+        </div> <!-- end 2nd column -->
+      </div> <!-- end col-2 grid-->
+    </div>
+    <img 
+      class="grid-item-full case__img-full case__animate-img u-width-100 u-mt-8" 
+      src="../img/projects/grids-pic-01.png" 
+      alt="project grids picture landing page"
+    >
+  </header>
+  <!-- MAIN -->
+  <main class="grid case__section-bottom">
+  <!-- Motivation section-->
+  <section class="grid-item">
+    <h4 class="case__section-title-alt"> Motivation & Goals</h4>
+    <div class="col-2-container-plus">
+      <div>
+        <p>
+          Before this project, when I was building a grid system I was using Bootstrap or some 
+          complicated custom HTML with cols, rows and containers done with flexbox… 
+          I learnt about this modern way to build layouts and decided to make this project 
+          so I could learn as much as possible about CSS Grid.
+        </p><br>
+        <p>
+          Grid Systems / Raster Systeme was my first graphic design book because I love neatly 
+          designed grids. 
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- #Tech Used-->
+  <section class="grid-item case__section">
+    <div class="col-2-container">
+      <img 
+        class="case__img-alt u-width-100 u-img-shadow js-animate-img lazy-img" 
+        src="../img/lazy-img.jpg"
+        data-src="../img/projects/grids-animation.gif" 
+        alt="project grids responsive animation gif"
+      >
+      <div>
+        <h4 class="case__section-title">Tech Used</h4>
+        <p>
+          After exploring about how I could properly organize the CSS files, I learned about BEM and ITCSS architecture and decided 
+          to implement the last one. Since them, I use this kind of code organization in my projects. 
+        </p><br>
+        <p>
+          The site had to be responsive too, so I created a SASS mixin with dynamic media 
+          queries. If I need to change the break points, 
+          I just have to do the change in the mixin file and it will be applied
+          everywhere in the stylesheet. 
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- #Problems & Process -->
+  <section class="grid-item case__section">
+    <div class="col-2-container">
+      <img 
+        class="case__img u-width-100 u-img-shadow js-animate-img lazy-img" 
+        src="../img/lazy-img.jpg"
+        data-src="../img/projects/grids-pic-book.jpg" 
+        alt="project grid picture grid systems book"
+      >
+      <div>
+        <h4 class="case__section-title">Problems & Thought Process</h4>
+        <p>
+          As the grid was quite complicated, I first learnt how exactly CSS Grid works, 
+          which I did following the documentation and reading some blog posts. 
+        </p>
+        <br>
+        <p>
+          Due to CSS Grid specifications, I had to create a custom solution to have the layout 
+          exact how I wanted to be. Once I got the grid solution, it was just a matter of 
+          implementing all the grid cells and the media queries. 
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- #Full Width Image -->
+  <section class="grid-item-full case__section">
+    <img 
+      class="case__img-full u-width-100 u-img-shadow js-animate-img lazy-img" 
+      src="../img/lazy-img.jpg"
+      data-src="../img/projects/grids-pic-display.jpg" 
+      alt="project grids digital products display"
+    >
+  </section>
+  <!-- #Lessons Learned -->
+  <section class="grid-item">
+    <div class="col-2-container-plus">
+      <div>
+        <h4 class="case__section-title-alt">Lessons Learned</h4>
+        <p>
+          I learnt a lot about how CSS Grid works and is implemented. I think that as a front-end 
+          developer, a basic but very important topic is to know how to create flexible and 
+          responsive grids. 
+        </p>
+        <br>
+        <p>
+          After this project I am much more confident in how I create 
+          easy to use responsive layouts. Now I create all my projects with a similar approach, 
+          using CSS Grid for the layout and a SASS mixin for the media queries. 
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- #Next Project Link -->
+  <div class="grid-item case__section">
+    <a class="card" href="/pages/case-quotes.html">
+      <h6 class="card__link">View Next Project <span class="card__icon material-icons"> navigate_next </span></h6>
+    </a>
+  </div>
+  <!-- End of MAIN -->
+  </main>
+ <!-- Footer -->
+  <footer class="footer grid">
+    <div class="grid-item">
+      <a class="anchor" id="contact-section"></a>
+      <h5 class="section-title">let’s code together!</h5>
+      <a class="footer__mail" href="mailto:hallo.luiscaballero@gmail.com">hallo.luiscaballero@gmail.com</a>
+      <ul class="footer__social">
+        <li><h6><a href="https://github.com/luiscaballero84" target="_blank" rel="noopener noreferrer">Github</a></h6></li>
+        <li><h6><a href="https://www.linkedin.com/in/luis-caballero-front-end-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h6></li>
+        <li><h6><a href="https://www.behance.net/luis-caballero" target="_blank" rel="noopener noreferrer">Behance</a></h6></li>
+        <li><h6><a href="https://www.instagram.com/workbyhorses/" target="_blank" rel="noopener noreferrer">Instagram</a></h6></li>
+        <li><p class="footer__copyright">Designed and coded with ❤️ by Luis Caballero © 2020</p></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

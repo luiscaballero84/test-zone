@@ -1,0 +1,49 @@
+.card {
+  display: block;
+  &:last-of-type { 
+    margin-top: 10rem;
+    @include respond(tablet) {
+      margin-top: 0rem;
+    }
+  }
+}
+
+
+.card:link{
+  padding: 0 0 ;
+  box-shadow: none;
+  
+  @media (hover: hover) {
+    &:hover .card__link { 
+      // transform: translate(1rem, 0);
+      border-bottom: 2px solid $color-primary-contrast;
+    }
+    &:hover img { 
+      transform: scale(1.03);
+    }
+  } 
+}
+
+
+.card__img {
+  width: 100%;
+  transition: transform .2s ease, margin-top .8s;
+}
+
+.card__title { margin-top: 2rem; }
+
+
+.card__link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: .3rem;
+  border-bottom: 2px solid transparent;
+  transition: transform .2s ease, border-bottom .1s ease;
+}
+
+.card__icon { 
+  margin-top: .2rem;
+  margin-right: -1rem;
+}
+

@@ -1,0 +1,39 @@
+///////////// 
+// sections images
+
+.case__img {
+  display: block;
+  border-radius: 5px;
+}
+
+.case__img-full {
+  border-radius: none; 
+  @include respond(tablet) { border-radius: 5px; } 
+}
+
+.case__img-alt {
+  display: block;
+  border-radius: 5px;
+}
+
+///////////// 
+// sections element margins
+
+.case__section {
+  margin-top: 6rem;
+  @include respond(tablet) { margin-top: 10rem; } 
+}
+
+.case__section-bottom { padding-bottom: 10rem; }
+
+.case__section-title {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  @include respond(tablet) { margin-top: 0rem; } 
+}
+
+.case__section-title-alt {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  @include respond(tablet) { margin-top: 10rem; } 
+}

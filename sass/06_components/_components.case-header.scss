@@ -1,0 +1,50 @@
+.case__header { padding-top: 5rem; }
+
+.case__animate {
+  animation: 
+    topToBottom-2 .5s ease, 
+    fadeIn .5s ease; 
+}
+
+.case__animate-img {
+  animation: 
+    bottomToTop .7s ease, 
+    fadeIn .1s ease; 
+}
+
+.case__header-title { margin-bottom: 2rem; }
+
+.case__info-container {
+  border-top: 2px solid $color-grey;
+  
+  & a {transition: transform .2s ease;}
+
+  &:first-of-type { 
+    margin-top: 4rem; 
+    @include respond(tablet) { margin-top: 0rem; } 
+  }
+  &:last-of-type {
+    border-bottom: 2px solid $color-grey;
+  }
+
+  @media (hover: hover) {
+    & a:hover {
+      transform: translateX(1rem);
+    }
+  }
+}
+
+.case__info-item {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+.case__info_title {
+  margin-right: 2rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.case__icon { margin-left: auto; }

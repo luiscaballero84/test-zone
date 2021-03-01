@@ -1,0 +1,73 @@
+//ANIMATIONS keyframes
+//////////////////////
+@keyframes fadeIn  {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;;
+  }
+}
+
+@keyframes topToBottom  {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes topToBottom-2  {
+  0% {
+    transform: translateY(-3rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+
+@keyframes bottomToTop  {
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes bottomToTop-2  {
+  0% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+
+
+@keyframes moveToDown  {
+  0% {
+    transform: translateY(0rem);
+  }
+  10% {
+    transform: translateY(1rem);
+  }
+  20% {
+    transform: translateY(0rem);
+  }
+  30% {
+    transform: translateY(1rem);
+  }
+  40% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

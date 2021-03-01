@@ -1,0 +1,60 @@
+// --------------------------------------------------
+// #Layout
+// --------------------------------------------------
+.main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    [max] 2.5rem
+    [col1] 1fr
+    [col2] 1fr
+    [col3] 1fr
+    [col4] 1fr
+    [end] 2.5rem
+    [max];
+  @include respond(desktop) {
+    grid-template-columns:
+      [max] 3.5rem
+      [col1] 1fr
+      [col2] 1fr
+      [col3] 1fr
+      [col4] 1fr
+      [end] 3.5rem
+      [max];
+  }
+}
+
+.grid__sidebar {
+  grid-column: col1 / col2;
+}
+
+.grid__main {
+  grid-column: col1 / end;
+  @include respond(desktop) {
+    grid-column: col2 / end;
+  }
+}
+
+// for the spy scroll
+.anchor {
+  display: block;
+  position: relative;
+  top: -7.5rem;
+  visibility: hidden;
+}
+
+#contact-section {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
+  @include respond(tablet) {
+    top: -400px;
+  }
+}
