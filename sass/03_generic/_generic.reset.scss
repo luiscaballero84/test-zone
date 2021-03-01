@@ -71,9 +71,11 @@ body {
 // FONTS
 /////////////////
 // Jet Mono Font
-font-family: 'JetMono';
+@font-face {
+  font-family: 'JetMono';
   src:  url('../../css/font/JetBrainsMono-Regular.woff') format('woff');
   font-weight: 400;
+}
 
 // Custom Font
 @font-face {
