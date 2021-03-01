@@ -32,6 +32,7 @@ header {
   color: blueviolet;
   color: red;
   color: green;
+  color: lightcoral;
   line-height: 20px;
   @include respond(desktop) {
     display: none;
