@@ -33,6 +33,55 @@ body {
   src: url("../../css/font-mod/mod-light.ttf") format("truetype");
   font-weight: 300; }
 
+@font-face {
+  font-family: "JetMono";
+  src: url("../../css/font/JetBrainsMono-Regular.woff") format("woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Custom";
+  src: url("../../css/font/custom-light.woff") format("woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Custom";
+  src: url("../../css/font/custom-regular.woff") format("woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "JetMono";
+  src: url("../../css/font/JetBrainsMono-Regular.woff") format("woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Custom";
+  src: url("../../css/font/custom-light.woff") format("woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Custom";
+  src: url("../../css/font/custom-book.woff") format("woff");
+  font-weight: 500;
+  src: url("../../css/font/custom-regular.woff") format("woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Custom";
+  src: url("../../css/font/custom-medium.woff") format("woff");
+  font-weight: 600;
+  src: url("../../css/font/custom-book.woff") format("woff");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Custom";
+  src: url("../../css/font/custom-medium.woff") format("woff");
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Custom";
+  src: url("../../css/font/custom-bold.woff") format("woff");
+  font-weight: 700; }
+
 a:link {
   color: #241C15;
   text-decoration: none; }
@@ -433,6 +482,7 @@ header {
     margin-top: 6rem; } }
 
 .test-info {
+  font-family: "JetMono";
   margin-bottom: 2rem;
   color: #1998fa;
   line-height: 20px; }
