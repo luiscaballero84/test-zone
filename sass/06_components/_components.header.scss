@@ -73,16 +73,28 @@ header {
   }
 }
 
+.--light {
+  font-weight: 300;
+}
+
+.--button {
+  padding: 8px 12px; 
+  border-radius: 4px;
+  background-color: #1998fa;
+  color: white; 
+}
+
 .header__titel {
+  font-family: "Mod";
   margin-bottom: 1.6rem;
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 26px;
+  font-size: 32px;
+  // font-weight: 600;
+  line-height: 1.25;
   color: #161616;
-  @include respond(desktop) {
-    font-size: 2.3rem;
-    line-height: 29px;
-  }
+  // @include respond(desktop) {
+  //   font-size: 2.3rem;
+  //   line-height: 29px;
+  // }
 }
 
 .header__text {
@@ -108,6 +120,7 @@ header {
 .subheader--light,
 .header__text--light {
   font-weight: 300;
+  color: green !important;
 }
 
 /////////////////////

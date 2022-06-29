@@ -1,6 +1,23 @@
 // --------------------------------------------------
 // #Utilities
 // --------------------------------------------------
+.u-fw--light {
+  font-weight: 300 !important;
+  color: red !important; 
+}
+
+.u-fw--regular {
+  font-weight: 400;
+}
+
+.u-fw--medium {
+  font-weight: 600;
+}
+
+.u-fw--bold {
+  font-weight: 700;
+}
+
 
 .u-text-center {
   text-align: center;

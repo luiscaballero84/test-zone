@@ -30,6 +30,12 @@ body {
 // Mod Fonts
 @font-face {
   font-family: "Mod";
+  src: url(".././css/font-mod/mod-bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mod";
   src: url(".././css/font-mod/mod-medium.woff") format("woff");
   font-weight: 600;
 }

@@ -27,6 +27,72 @@
     <!-- <script type="module" src="js/app.js"></script> -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .--light {
+        font-family: "Mod";
+        font-weight: 300;
+      }
+
+      .--regular {
+        font-family: "Mod";
+        font-weight: 400;
+      }
+
+      .--medium {
+        font-family: "Mod";
+        font-weight: 600;
+        letter-spacing: 0.2px;
+      }
+
+      .--bold {
+        font-family: "Mod";
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+
+      .--size-l {
+        font-size: 32px;
+      }
+
+      .--size-body {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .--heading {
+        margin-bottom: 16px;
+        line-height: 1.25;
+      }
+
+      .--center-text {
+        text-align: center;
+      }
+
+      .--max750 {
+        max-width: 750px;
+      }
+
+      .--button {
+        padding: 12px 16px;
+        border-radius: 4px;
+        background-color: #1998fa;
+        color: white;
+        font-size: 16px;
+        font-family: "Mod";
+        border: none;
+        margin: 32px auto;
+        display: block;
+      }
+
+      #icon {
+        width: 32px;
+        height: 32px;
+        margin-left: 16px;
+      }
+
+      .--img {
+      }
+    </style>
   </head>
   <body>
     <div class="main-container">
@@ -37,7 +103,7 @@
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
-          <ul class="navbar__menu">
+          <ul class="navbar__menu --light">
             <li>Entertainment</li>
             <li>Heizung</li>
             <li>Sicherheit</li>
@@ -49,474 +115,142 @@
             <li>Systeme</li>
           </ul>
           <div class="searchbar">
-            <p class="searchbar__text">Suche nach marken oder Produkte</p>
-            <span class="material-icons icon">search</span>
+            <p class="searchbar__text --light">
+              Suche nach marken oder Produkte
+            </p>
+            <span>
+              <svg
+                id="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                    }
+                  </style>
+                </defs>
+                <path
+                  d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"
+                  transform="translate(0 0)"
+                />
+                <rect
+                  id="_Transparent_Rectangle_"
+                  data-name="&lt;Transparent Rectangle&gt;"
+                  class="cls-1"
+                  width="32"
+                  height="32"
+                />
+              </svg>
+            </span>
           </div>
         </div>
         <div class="navbar__container--right">
-          <span class="material-icons icon">person_outline</span>
-          <span class="material-icons icon">card_travel</span>
+          <span>
+            <svg
+              id="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                  }
+                </style>
+              </defs>
+              <title>user</title>
+              <path
+                d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"
+              />
+              <path
+                d="M26,30H24V25a5,5,0,0,0-5-5H13a5,5,0,0,0-5,5v5H6V25a7,7,0,0,1,7-7h6a7,7,0,0,1,7,7Z"
+              />
+              <rect
+                id="_Transparent_Rectangle_"
+                data-name="&lt;Transparent Rectangle&gt;"
+                class="cls-1"
+                width="32"
+                height="32"
+              />
+            </svg>
+          </span>
+          <span
+            ><svg
+              id="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                  }
+                </style>
+              </defs>
+              <title>shopping--bag</title>
+              <path
+                d="M28.76,11.35A1,1,0,0,0,28,11H22V7a3,3,0,0,0-3-3H13a3,3,0,0,0-3,3v4H4a1,1,0,0,0-1,1.15L4.88,24.3a2,2,0,0,0,2,1.7H25.14a2,2,0,0,0,2-1.7L29,12.15A1,1,0,0,0,28.76,11.35ZM12,7a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v4H12ZM25.14,24H6.86L5.17,13H26.83Z"
+              />
+              <rect
+                id="_Transparent_Rectangle_"
+                data-name="&lt;Transparent Rectangle&gt;"
+                class="cls-1"
+                width="32"
+                height="32"
+              />
+            </svg>
+          </span>
         </div>
       </nav>
       <!-- HEADER start -->
       <header class="grid">
-        <div class="breadcrumbs grid__sidebar">
-          <span>Home ></span> Entertainment
+        <div class="breadcrumbs grid__sidebar --light">
+          <span>Home ></span> Medium + Light
         </div>
         <div class="grid__main header__content">
           <!-- actual font status-->
-          <div class="font-test-block">
-            <div class="test-info">
+          <div class="font-test-block --max750">
+            <!-- <div class="test-info">
               <p>01 | Open Sans | Actual Size</p>
               <p>H1 Regular 19px | H2 Medium 20/26px | P Regular. 14/21px</p>
             </div>
             <div class="test-info test-info--desktop">
               <p>01 | Open Sans | Actual Size</p>
               <p>H1 Regular 19px | H2 Medium 23/29px | P Regular 16/24px</p>
-            </div>
+            </div> -->
 
-            <p class="subheader">H1 Entertainment</p>
-            <p class="header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
+            <!-- <p class="subheader">H1 Entertainment</p> -->
+            <p class="--medium --size-l --heading --center-text">
+              Musik jederzeit dank smartem Entertainment
             </p>
-            <p class="header__text">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
+            <p class="--center-text --size-body --light">
+              Musik begleitet uns überall hin. Ob morgens beim Zähne putzen, auf
+              dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch in
+              Filmen und Serien ist sie stark vertreten.
             </p>
+            <button class="--button --medium">Jetzt loslegen</button>
           </div>
-
-          <!-- mod-medium + mod-light -->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>02 | Moderat | Actual Size</p>
-              <p>H1 Light 19px | H2 Medium 20/26px | P Light 14/21px</p>
+          <div class="flex">
+            <div>
+              <img
+                src="https://source.unsplash.com/vVmfi-yhCsc/"
+                alt="Girl in a jacket"
+                width="500"
+                height="600"
+              />
             </div>
-            <div class="test-info test-info--desktop">
-              <p>02 | Moderat | Actual Size</p>
-              <p>H1 Light 19px | H2 Medium 23/29px | P Light 16/24px</p>
+            <div>
+              <h2 class="--medium --size-l">Hey</h2>
+              <strong>very important</strong>
+              <p></p>
+              <strong>very important</strong>
+              <p></p>
             </div>
-            <p class="subheader subheader--light">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--light">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
           </div>
-          <!-- mod-medium + mod-regular -->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>03 | Moderat | Actual Size</p>
-              <p>H1 Regular 19px | H2 Medium 20/26px | P Regular. 14/21px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>03 | Moderat | Actual Size</p>
-              <p>H1 Regular 19px | H2 Medium 23/29px | P Regular 16/24px</p>
-            </div>
-
-            <p class="subheader subheader--reg">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-light / P SIZE-01 -->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>04 | Moderat | Size 01</p>
-              <p>H1 Light 19px | H2 Medium 20/26px | P Light 15/24px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>04 | Moderat | Size 01</p>
-              <p>H1 Light 19px | H2 Medium 23/29px | P Light 17/28px</p>
-            </div>
-            <p class="subheader subheader--light">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--light header__text--size01">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-regular / SIZE-01-->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>04 | Moderat | Size 01</p>
-              <p>H1 Regular 19px | H2 Medium 20/26px | P Regular 15/24px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>04 | Moderat | Size 01</p>
-              <p>H1 Regular 19px | H2 Medium 23/29px | P Regular 17/28px</p>
-            </div>
-            <p class="subheader subheader--reg">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg header__text--size01">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-light / P SIZE-02 -->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>05 | Moderat | Size 02</p>
-              <p>H1 Light 19px | H2 Medium 20/26px | P Light 16/26px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>05 | Moderat | Size 02</p>
-              <p>H1 Light 19px | H2 Medium 23/29px | P Light 18/30px</p>
-            </div>
-            <p class="subheader subheader--light">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--light header__text--size02">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-regular / SIZE-02-->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>06 | Moderat | Size 02</p>
-              <p>H1 Regular 19px | H2 Medium 20/26px | P Regular 16/26px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>06 | Moderat | Size 02</p>
-              <p>H1 Regular 19px | H2 Medium 23/29px | P Regular 18/30px</p>
-            </div>
-            <p class="subheader subheader--reg">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg header__text--size02">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-light / P SIZE-03 -->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>07 | Moderat | Size 03</p>
-              <p>H1 Light 19px | H2 Medium 20/26px | P Light 18/28px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>07 | Moderat | Size 03</p>
-              <p>H1 Light 19px | H2 Medium 23/29px | P Light 20/32px</p>
-            </div>
-            <p class="subheader subheader--light">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--light header__text--size03">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-regular / SIZE-03-->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>08 | Moderat | Size 03</p>
-              <p>H1 Regular 19px | H2 Medium 20/26px | P Regular 18/28px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>08 | Moderat | Size 03</p>
-              <p>H1 Regular 19px | H2 Medium 23/29px | P Regular 20/32px</p>
-            </div>
-            <p class="subheader subheader--reg">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg header__text--size03">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-light / P SIZE-04 -->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>09 | Moderat | Size 04</p>
-              <p>H1 Light 19px | H2 Medium 20/26px | P Light 18/30px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>09 | Moderat | Size 04</p>
-              <p>H1 Light 19px | H2 Medium 23/29px | P Light 20/34px</p>
-            </div>
-            <p class="subheader subheader--light">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--light header__text--size04">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-regular / SIZE-04-->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>10 | Moderat | Size 04</p>
-              <p>H1 Regular 19px | H2 Medium 20/26px | P Regular 18/30px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>10 | Moderat | Size 04</p>
-              <p>H1 Regular 19px | H2 Medium 23/29px | P Regular 20/34px</p>
-            </div>
-            <p class="subheader subheader--reg">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg header__text--size04">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-light / P SIZE-05 -->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>11 | Moderat | Size 05</p>
-              <p>H1 Light 19px | H2 Medium 20/26px | P Light 18/32px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>11 | Moderat | Size 05</p>
-              <p>H1 Light 19px | H2 Medium 23/29px | P Light 20/36px</p>
-            </div>
-            <p class="subheader subheader--light">H1 Entertainment</p>
-            <p class="header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--light header__text--size05">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-regular / SIZE-05-->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info">
-              <p>12 | Moderat | Size 05</p>
-              <p>H1 Regular 19px | H2 Medium 20/26px | P Regular 18/32px</p>
-            </div>
-            <div class="test-info test-info--desktop">
-              <p>12 | Moderat | Size 05</p>
-              <p>H1 Regular 19px | H2 Medium 23/29px | P Regular 20/36px</p>
-            </div>
-            <p class="subheader subheader--reg">H1 Entertainment</p>
-            <p class="header__titel header__titel">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg header__text--size05">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- FAVOURITES -->
-          <!-- mod-medium + mod-regular / body SIZE-01 / H2 SIZE-01-->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info test-info--selected">
-              <p>13 SELECTED | Moderat | H2 Size 01 | body Size 01</p>
-              <p>H1 Regular 19px | H2 Medium 21/27px | P Regular 15/24px</p>
-            </div>
-            <div class="test-info test-info--desktop test-info--selected">
-              <p>13 SELECTED | Moderat | H2 Size 01 | body Size 01</p>
-              <p>H1 Regular 19px | H2 Medium 24/30px | P Regular 17/28px</p>
-            </div>
-            <p class="subheader subheader--reg subheader--size01">
-              H1 Entertainment
-            </p>
-            <p class="header__titel header__titel--size03">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg header__text--size01">
-              Body Musik begleitet uns überall hin. Ob morgens beim Zähne
-              putzen, auf dem Weg zur Arbeit in der Bahn oder abends auf der
-              Couch. Auch in Filmen und Serien ist sie stark vertreten. Wieso
-              also nicht auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <!-- mod-medium + mod-regular / SIZE-02-->
-          <div class="font-test-block font-test-block--mod">
-            <div class="test-info test-info--selected">
-              <p>14 SELECTED | Moderat | Size 02</p>
-              <p>H1 Regular 19px | H2 Medium 22/28px | P Regular 16/26px</p>
-            </div>
-            <div class="test-info test-info--desktop test-info--selected">
-              <p>14 SELECTED | Moderat | Size 02</p>
-              <p>H1 Regular 19px | H2 Medium 26/32px | P Regular 18/30px</p>
-            </div>
-            <p class="subheader subheader--reg subheader--size03">
-              H1 Entertainment
-            </p>
-            <p class="header__titel header__titel--size04">
-              H2 Musik jederzeit dank smartem Entertainment
-            </p>
-            <p class="header__text header__text--reg header__text--size02">
-              P Musik begleitet uns überall hin. Ob morgens beim Zähne putzen,
-              auf dem Weg zur Arbeit in der Bahn oder abends auf der Couch. Auch
-              in Filmen und Serien ist sie stark vertreten. Wieso also nicht
-              auch Musik und Entertainment smart nutzen? Mit smarten
-              Entertainment-Produkten wie WLAN- und Bluetooth-Lautsprechern,
-              kabellosen Kopfhörern und smarten Soundsystemen kannst Du Deine
-              Musikwelt mit einem Fingertipp über Dein Smartphone bedienen.
-              <br /><br />Erlebe hervorragenden Klang im ganzen Haus mit
-              kabellosen Lautsprechern, ohne komplizierten Kabelsalat oder
-              tausenden CDs und Schallplatten. Verbinde einfach Dein Smartphone
-              mit dem smarten Lautsprecher und schon kannst Du die Musik über
-              die App nach Deinen Wünschen steuern.
-            </p>
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
         </div>
       </header>
       <!-- MAIN start -->
